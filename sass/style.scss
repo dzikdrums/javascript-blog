@@ -46,22 +46,30 @@ body {
 .wrapper {
   display: flex;
   margin-left: 10px;
+  min-height: 550px;
 }
 
 .sidebar {
   flex: 1 0 0;
-}
 
-.posts {
-  flex: 2 0 0;
+  &.list {
+    text-align: center;
+  }
 }
 
 .sidebar, .posts {
   background: $color-light;
   margin-right: 10px;
+  margin-bottom: 30px;
   padding: 40px;
   border: 1px solid $color-dark;
   border-radius: 5px;
+}
+
+.posts {
+  flex: 2 0 0;
+  position: relative;
+  overflow: auto;
 }
 
 /* Logo */
@@ -78,7 +86,6 @@ body {
 
 .list {
   list-style-type: none;
-  margin: 0;
   padding: 0;
   .active {
     font-weight: bold;
@@ -102,9 +109,14 @@ body {
 /* Post */
 
 .post {
-  display: none;
+  position: absolute;
+  opacity: 0;
+  transition: 0.2s;
+  transition-timing-function: ease-out;
+  z-index: 0;
   &.active {
-    display: block;
+    opacity: 1;
+    z-index: 1;
   }
 }
 
