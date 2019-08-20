@@ -95,16 +95,18 @@ body {
 
 /* Post */
 .post {
-  position: absolute;
+  height: 0;
   opacity: 0;
-  transition: 0.2s;
+  transition: 0.2s opacity;
   transition-timing-function: ease-out;
   z-index: 0;
+  overflow: hidden;
 }
 
 .post.active {
   opacity: 1;
   z-index: 1;
+  height: auto;
 }
 
 .post-author {
