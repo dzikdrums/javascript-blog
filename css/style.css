@@ -12,9 +12,14 @@ body {
   line-height: 1.7;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  padding-bottom: 10px;
 }
 
 .section-title {
@@ -40,6 +45,7 @@ body {
 .sidebar {
   -ms-flex: 1 0 0px;
       flex: 1 0 0;
+  text-align: center;
 }
 
 .sidebar.list {
@@ -73,6 +79,7 @@ body {
 .list {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .list .active {
@@ -80,11 +87,28 @@ body {
 }
 
 .list-horizontal li {
-  display: inline-block;
+  display: inline;
+  padding: 5px;
+}
+
+.tags-list {
+  padding-left: 0;
 }
 
 .authors li {
   margin-bottom: 12px;
+}
+
+.authors-list {
+  padding-left: 0;
+}
+
+.authors-list a {
+  display: block;
+}
+
+.posts {
+  margin: 0;
 }
 
 .post {
@@ -115,12 +139,7 @@ body {
   margin: 0 10px 0 0;
 }
 
-.tags a {
-  text-decoration: none;
-}
-
 .tags li {
-  color: orange;
   list-style: none;
 }
 
@@ -138,9 +157,5 @@ body {
 
 .tag-size-5 {
   font-size: 35px;
-}
-
-.post-tags .list a.active {
-  color: red;
 }
 /*# sourceMappingURL=style.css.map */
