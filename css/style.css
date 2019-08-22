@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -137,10 +141,6 @@ a {
 
 .post-tags p {
   margin: 0 10px 0 0;
-}
-
-.tags li {
-  list-style: none;
 }
 
 .tag-size-2 {
