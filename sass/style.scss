@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,600|Sacramento|Source+Sans+Pro:300&subset=latin-ext');
 
-/* Variables */
+// Variables
 
 $color-light: #fff;
 $color-dark: #444;
@@ -9,7 +9,7 @@ $font-logo: 'Sacramento', cursive;
 $font-header: 'Oswald', sans-serif;
 $font-text: 'Source Sans Pro', sans-serif;
 
-/* Global */
+// Global
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -41,7 +41,7 @@ body {
   }
 }
 
-/* Layout */
+// Layout
 
 .wrapper {
   display: flex;
@@ -73,7 +73,7 @@ body {
 
 }
 
-/* Logo */
+// Logo
 
 .logo {
   font-family: $font-logo;
@@ -83,7 +83,7 @@ body {
   text-align: center;
 }
 
-/* Lists */
+// Lists
 
 .list {
   list-style-type: none;
@@ -99,7 +99,7 @@ body {
   }
 }
 
-/* Authors */
+// Authors
 
 .authors {
   li {
@@ -107,7 +107,7 @@ body {
   }
 }
 
-/* Post */
+// Post
 
 .post {
   height: 0;
@@ -132,4 +132,35 @@ body {
   p {
     margin: 0 10px 0 0;
   }
+}
+
+// Tag-size
+.tags a{
+  text-decoration: none;
+}
+
+.tags li{
+  color: orange;
+  list-style: none;
+}
+
+
+.tag-size-2{
+  font-size: 20px;
+}
+
+.tag-size-3{
+  font-size: 25px;
+}
+
+.tag-size-4{
+  font-size: 30px;
+}
+
+.tag-size-5{
+  font-size: 35px;
+}
+
+.post-tags .list a.active{
+  color: red;
 }
