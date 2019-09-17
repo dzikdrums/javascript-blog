@@ -159,7 +159,7 @@
     generateTitleLinks('[data-tags~="' + tag + '"]');
   }
 
-  function addClickListenersToTags(){
+  function addClickListenersToTags() {
     const allLinks = document.querySelectorAll('a[href^="#tag-"]')
 
     for (let link of allLinks) {
@@ -172,7 +172,7 @@
 
   // AUTHOR HANDLERS
 
-  function generateAuthors(){
+  function generateAuthors() {
     let allAuthors = {};
     const articles = document.querySelectorAll(select.all.articles);
 
@@ -203,7 +203,7 @@
     tagList.innerHTML = templates.authorCloudLink(allAuthorsData);
   }
 
-  function authorClickHandler(event){
+  function authorClickHandler(event) {
     event.preventDefault();
     const clickedElement = this;
     const href = clickedElement.getAttribute('href');
